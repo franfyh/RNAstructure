@@ -1,0 +1,1 @@
+This is a beta version 5.7 of RNAstructure.  Release date is yet to be determined.

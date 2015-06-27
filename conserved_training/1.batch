@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH -J /scratch/yfu7//Projects/TurboFold/Scripts/RNAstructure_git/conserved_training/conserved_training.batch
+#SBATCH -e /scratch/yfu7//Projects/TurboFold/Scripts/RNAstructure_git/conserved_training/conserved_training.error
+#SBATCH -o /scratch/yfu7//Projects/TurboFold/Scripts/RNAstructure_git/conserved_training/conserved_training.log
+#SBATCH --mem=500
+#SBATCH -t 48:00:00
+#SBATCH -n 1
+time /scratch/yfu7/Projects/TurboFold/Scripts/RNAstructure_git/exe/conserved_training /scratch/yfu7//Projects/TurboFold/Scripts/RNAstructure_git/conserved_training/conserved_training.conf

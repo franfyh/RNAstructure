@@ -1,0 +1,3 @@
+f -nan
+terminate called after throwing an instance of 'dlib::error'
+  what():  The objective function generated non-finite outputs

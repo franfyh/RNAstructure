@@ -1,6 +1,5 @@
 *.o
 exe/*
-libsvm-3.18/*
 libsvm-3.18/svm-predict
 libsvm-3.18/svm-train
 libsvm-3.18/svm-scale

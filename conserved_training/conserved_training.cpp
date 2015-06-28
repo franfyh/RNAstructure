@@ -5,6 +5,13 @@ conserved_training_interface::conserved_training_interface() {
 
 //    processors = 1;
     parameters.assign(8,0);
+    parameters[1] = 1.01501;
+    parameters[2] = 3.32654;
+    parameters[3] = 1.00403;
+    parameters[4] = 1.29882;
+    parameters[5] = 0.592791;
+    parameters[6] = 0.55461;
+    parameters[7] = 0.977311;
     training = 0;
     alpha = 0;
 }

@@ -136,7 +136,7 @@ double conserved_training_interface::conserved_accuracy(const column_vector& m)
         temp_files.push_back(training_files[i*3]);
         temp_files.push_back(training_files[i*3+1]);
         temp_files.push_back(training_files[i*3+2]);
-        cerr << temp_files[0] << "\n";
+//        cerr << temp_files[0] << "\n";
         ifstream myfile(temp_files[0].c_str() );
         string temp;
         string sequence1;
@@ -268,8 +268,8 @@ double conserved_training_interface::conserved_accuracy(const column_vector& m)
 //        cerr <<"accuracy "<<log_accuracy[i]<<"\n";
         sum_log_accuracy -= energy_equilibrium_constant/(-1*RKC*310.15);
         //       cerr <<"accuracy "<<log_accuracy[i]<<"\n";
-        cerr << "partition "<<energy_partition_function<<"\n";
-        cerr << "eq "<<energy_equilibrium_constant<<"\n";
+//        cerr << "partition "<<energy_partition_function<<"\n";
+//        cerr << "eq "<<energy_equilibrium_constant<<"\n";
 
         delete structure1;
         delete structure2;

@@ -264,7 +264,6 @@ double Multifind_object::common_energies(){
 
 vector<double> Multifind_object::predict_ncRNA_probabilities(double sci,double entropy,double single_z,double ensemble_defect_z){
   string path=string(getenv("DATAPATH"));
-  cerr << "data\n";
   string multi_model_name=path+"/"+"data_assemble_training_Multifind_predict_ensemble_z_final_svmformat.model";
   
   struct svm_node* multi=new svm_node[5];
@@ -283,7 +282,6 @@ vector<double> Multifind_object::predict_ncRNA_probabilities(double sci,double e
   multi[3].index=4;
   multi[3].value=scaled_ensemble_defect_z;
   multi[4].index=-1;
-  cerr <<"papa\n";
   double* multi_prob_estimates=NULL;
   multi_prob_estimates=(double *)malloc(nr_class_multi*sizeof(double));
   svm_predict_probability(multi_model,multi,multi_prob_estimates);
@@ -326,7 +324,6 @@ int Multifind_object::Multifind_Predict(){
   }
   
   float sum_common_energies=common_energies();
-  cerr<<"lala!\n";
   string path=string(getenv("DATAPATH"));
 
   string file_name=path+"/"+"new_training_z_ave.scale.model";
@@ -337,11 +334,8 @@ int Multifind_object::Multifind_Predict(){
   struct svm_model* model_ensemble_average=svm_load_model(file_name.c_str());
   file_name=path+"/"+"std_ensemble_defect.model";
   struct svm_model* model_ensemble_std=svm_load_model(file_name.c_str());
-  cerr <<"kaka\n";
-  cerr <<path<<"\n";
   for(int i=0;i<input_sequences.size();++i){
       vector<double> single_predict_results=single_z_predict(input_sequences[i],model_folding_average,model_folding_std,model_ensemble_average,model_ensemble_std);
-      cerr <<"predict!\n";
     RNA* point_RNA=new RNA(input_sequences[i].c_str());
     point_RNA->FoldSingleStrand(0,1,0);
     double single_energy=point_RNA->GetFreeEnergy(1);

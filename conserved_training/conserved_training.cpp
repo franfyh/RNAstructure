@@ -279,7 +279,7 @@ double conserved_training_interface::conserved_accuracy(const column_vector& m)
         delete equilibrium_constant_target;
     
    }
-    sum_log_accuracy /= training_files.size();
+    sum_log_accuracy /= (training_files.size()/3);
 
     for(int i=0;i<7;++i){
 //        cerr <<"i "<<i<<" "<<0.5*alpha*m(i)*m(i)<<"\n";
@@ -476,7 +476,7 @@ const column_vector conserved_training_interface::conserved_accuracy_derivative(
       }
 
     for(int p=0;p<7;++p){
-        res(p) /= training_files.size();
+        res(p) /= (training_files.size()/3);
         res(p) += alpha*m(p); 
     }
 
@@ -661,7 +661,7 @@ double conserved_training_interface::conserved_testing_accuracy(const column_vec
 
         //  }
 //    cerr <<"final "<<sum_log_accuracy<<"\n";
-    return sum_log_accuracy/testing_files.size();
+    return sum_log_accuracy/(testing_files.size()/3);
 } 
 
 conserved_training_interface* runner = new conserved_training_interface();

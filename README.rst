@@ -37,8 +37,8 @@ The example configuration file to run Dynalign II on is
 
 in ``RNAstructure/examples/`` directory.
 
-Detailed instructions can be found at http://rna.urmc.rochester.edu/Text/dynalign.html
-Reference article can be found at http://nar.oxfordjournals.org/content/42/22/13939
+Detailed instructions can be found at http://rna.urmc.rochester.edu/Text/dynalign.html .
+Reference article can be found at http://nar.oxfordjournals.org/content/42/22/13939 .
 
 Multifind
 ---------
@@ -57,8 +57,8 @@ Please run:
 
 in ``RNAstructure/examples/`` directory.
 
-Detailed instructions can be found at http://rna.urmc.rochester.edu/Text/Multifind.html
-Reference article can be found at http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130200
+Detailed instructions can be found at http://rna.urmc.rochester.edu/Text/Multifind.html .
+Reference article can be found at http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130200 .
 
 conserved_training
 ------------------
@@ -85,10 +85,10 @@ pairwise alignment
 fasta file and the structure ct files for every data point in the testing set.
 The ``Alpha`` field of the conf file is the parameter for the L2 regularization.
 
-Reference article can be found at https://github.com/franfyh/RNAstructure/blob/master/log_linear.pdf
+Reference article can be found at https://github.com/franfyh/RNAstructure/blob/master/log_linear.pdf .
 
 TurboFold
 ---------
-The improvement of TurboFold is a project ongoing. Original TurboFold can be
-downloaded at http://rna.urmc.rochester.edu/RNAstructure.html
-The reference of the original TurboFold can be found at http://www.biomedcentral.com/1471-2105/12/108
+The improvement of TurboFold is a project ongoing. Original TurboFold can be 
+downloaded at http://rna.urmc.rochester.edu/RNAstructure.html .
+The reference of the original TurboFold can be found at http://www.biomedcentral.com/1471-2105/12/108 .

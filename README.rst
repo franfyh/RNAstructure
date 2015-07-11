@@ -13,7 +13,7 @@ change the DATAPATH environment variable.
 
 In BASH, this is accomplished with:
 
-    export DATAPATH=[directory in which RNAstructure resides]/RNAstructure/data_tables/
+``export DATAPATH=[directory in which RNAstructure resides]/RNAstructure/data_tables/``
 
 In CSH, this is accomplished with:
 

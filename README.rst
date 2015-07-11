@@ -17,7 +17,7 @@ In BASH, this is accomplished with:
 
 In CSH, this is accomplished with:
 
-    setenv DATAPATH [directory in which RNAstructure resides]/RNAstructure/data_tables/
+``setenv DATAPATH [directory in which RNAstructure resides]/RNAstructure/data_tables/``
 
 I contributed several parts to RNAstructure, they are:
 
@@ -26,14 +26,14 @@ Dynalign II
 
 Under RNAstructure/ directory, please run:
 
-    make dynalign_ii
+``make dynalign_ii``
 
 The executable "dynalign_ii" will be in the RNAstructure/exe/ directory.
 
 The example configuration file to run Dynalign II on is
 RNAstructure/examples/dynalign_ii_sample.conf. Please run:
 
-    ../exe/dynalign_ii dynalign_ii_sample.conf 
+``../exe/dynalign_ii dynalign_ii_sample.conf``
 
 in RNAstructure/examples/ directory.
 
@@ -44,7 +44,7 @@ Multifind
 ---------
 Under RNAstructure/ directory, please run:
 
-    make Multifind
+``make Multifind``
 
 The executable "Multifind" will be in the RNAstructure/exe/ directory.
 
@@ -53,7 +53,7 @@ RNAstructure/examples/Multifind_sample.conf
 
 Please run:
 
-    ../exe/Multifind Multifind_sample.conf 
+``../exe/Multifind Multifind_sample.conf`` 
 
 in RNAstructure/examples/ directory.
 
@@ -64,7 +64,7 @@ conserved_training
 ------------------
 Under RNAstructure/ directory, please run:
 
-    make conserved_training
+``make conserved_training``
 
 The executable "conserved_training" will be in the RNAstructure/exe/ directory.
 
@@ -73,7 +73,7 @@ RNAstructure/conserved_training/conserved_training.conf
 
 Please run:
 
-    ../exe/conserved_training conserved_training.conf 
+``../exe/conserved_training conserved_training.conf`` 
 
 in RNAstructure/conserved_training/ directory.
 

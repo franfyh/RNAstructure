@@ -85,7 +85,7 @@ pairwise alignment
 fasta file and the structure ct files for every data point in the testing set.
 The ``Alpha`` field of the conf file is the parameter for the L2 regularization.
 
-Reference article can be found at <https://github.com/franfyh/RNAstructure/blob/master/log_linear.pdf>.
+Reference article can be found at <https://github.com/franfyh/RNAstructure/blob/master/maximum_entropy.pdf>.
 
 TurboFold
 ---------
